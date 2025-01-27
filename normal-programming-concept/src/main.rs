@@ -12,4 +12,6 @@ fn main() {
 fn test_function(num: i32, unitLabel: char) -> i32 {
     println!("他の関数だよ〜 {} {}", num, unitLabel);
     2345
+    // なんの意味もないコメントです
+    // コメント，たのし〜
 }
