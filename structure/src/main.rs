@@ -5,6 +5,9 @@ struct User {
     sign_in_count: u32,
 }
 
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
+
 fn main() {
     let user1 = build_user(
         String::from("someone@example.com"),
@@ -18,6 +21,9 @@ fn main() {
     };
 
     println!("{}", user1.email);
+
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
 }
 
 fn build_user(email: String, username: String) -> User {
